@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Application Demo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        background-color: #333;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+
+      .content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* New styles for multimedia elements */
+      .multimedia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .multimedia img,
+      .multimedia video {
+        max-width: 48%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .multimedia img,
+        .multimedia video {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+      <h1>Welcome to Our Demo Web Application</h1>
+
+      <h2>Text Formatting Examples</h2>
+      <p>
+        This is <strong>bold text</strong> and this is <em>italic text</em>.
+      </p>
+      <p>
+        This is <u>underlined text</u> and this is
+        <mark>highlighted text</mark>.
+      </p>
+
+      <h2>Multimedia Elements</h2>
+      <div class="multimedia">
+        <img
+          src="https://media.istockphoto.com/id/692243858/photo/exoplanet-in-deep-space.jpg?s=1024x1024&w=is&k=20&c=VScycvwS93jMD5si9ealJ5TSS6pMCbmyd1kCEwGuz7E="
+          alt="Exoplanet in Deep Space"
+        />
+        <video controls width="400">
+          <source
+            src="https://cdn.pixabay.com/vimeo/328370016/earth-24536.mp4?width=640&hash=4f7e2a72a6d5fb753a1462cdff3ba5a936bfe8a3"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <h2>Web devlopment</h2>
+      <table>
+        <tr>
+          <th>Frontend</th>
+          <th>Backend</th>
+        </tr>
+        <tr>
+          <td>HTML , CSS</td>
+          <td>Node.js , Express.js</td>
+        </tr>
+        <tr>
+          <td>Javascript , React , Redux</td>
+          <td>MongodDB</td>
+        </tr>
+      </table>
+
+      <h2>Contact Form</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+  </body>
+</html>
